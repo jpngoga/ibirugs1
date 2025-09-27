@@ -34,5 +34,18 @@
   },
   "overrides": {
     "vite": "npm:rolldown-vite@7.1.12"
-  }
+  },
+  "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
+  "main": "eslint.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jpngoga/ibirugs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jpngoga/ibirugs/issues"
+  },
+  "homepage": "https://github.com/jpngoga/ibirugs#readme"
 }
