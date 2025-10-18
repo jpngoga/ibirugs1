@@ -1,0 +1,194 @@
+/* src/index.css */
+/* Removed Tailwind directives because build tool does not support them */
+
+/* Your custom CSS below */
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255,255,255,0.87);
+  background-color: #242424;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Your remaining styles... */
+
+
+/* ...rest of your CSS */
+
+
+/* Reset defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background: #fafafa;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* Root container */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+/* Links */
+a {
+  color: #2563eb;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+  color: #1e40af;
+  text-decoration: underline;
+}
+
+/* Cards / sections */
+.card {
+  background: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  margin-bottom: 2rem;
+}
+
+/* Buttons */
+button {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out, transform 0.1s;
+}
+
+button:hover {
+  background: #1e40af;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* Utility text */
+.read-the-docs {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* --------------------
+   RESPONSIVE DESIGN
+-------------------- */
+
+/* Small screens (phones) */
+@media (max-width: 640px) {
+  #root {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  .card {
+    padding: 1.25rem;
+  }
+
+  button {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.1rem;
+  }
+}
+
+/* Medium screens (tablets) */
+@media (min-width: 641px) and (max-width: 1024px) {
+  #root {
+    padding: 2rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .card {
+    padding: 1.75rem;
+  }
+}
+
+/* Large screens (desktops) */
+@media (min-width: 1025px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+}
+
+.mobile-nav {
+  display: flex;
+  flex-direction: column;   /* stack links vertically */
+  gap: 1.2rem;              /* space between each link */
+  background: white;
+  padding: 1.5rem;
+  border-top: 1px solid #ddd;
+}
+
+.mobile-nav a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #333;
+  transition: color 0.2s;
+}
+
+.mobile-nav a:hover {
+  color: #000; /* darker on hover */
+}
+
+@media (min-width: 768px) {
+  .nav-links {
+    display: flex;
+    gap: 1.5rem; /* spacing between desktop links */
+  }
+  .menu-btn {
+    display: none;
+  }
+  .mobile-nav {
+    display: none;
+  }
+}
+
